@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+}
+.heading{
+    color:white;
+    font-family: sans-serif;
+    background-color: #c6151d;
+    display: flex;
+    padding:8px 10rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading a{
+    color:#fff;
+    text-decoration: none;
+}
+.heading span{
+    margin-left:1rem;
+}
+.header_heading{ 
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-left: 3.2rem;
+}
+
+.category_styling{
+    text-align: center;
+    font-size:1.3rem;
+    font-weight:600;
+    font-family: sans;
+    color:black;
+}
+.item_heading{
+    margin-top: 2rem;
+}
+.item_container{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 1.8rem;
+    margin:2rem 10rem;
+    border-radius: 5px;
+    /* box-shadow: 0 8px 8px 0  #d6d2d2; */
+}
+
+.item_container a{
+    text-decoration:none;
+}
+.itemImage_styling{
+background-color:  #f1eeee;;
+height:13rem;
+width:13rem;
+display: flex;
+align-items: center;
+justify-content: center;
+margin:1rem;
+border-radius:4rem;
+}
+.item_link_container{
+    background-color: #fff;
+    padding:2.5rem;
+    box-shadow: 2px 8px 8px 3px  #6e6363;
+    margin:2rem;
+    border-radius:1.8rem;
+    
+}
+.itemlist_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item_list{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1.8rem;
+    width:50rem;
+    margin:2rem 10rem;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px 0  #d6d2d2;
+
+}
+.item_list img{
+    width:200px;
+    background-color: #f1eeee;
+    margin-left:2rem;
+}
+.cart_icon{
+    margin-left:20px;
+}
+button{
+    color:white;
+    padding:8px 20px;
+    background-color:rgb(255, 0, 0);
+    cursor:pointer;
+    border:none;
+    border-radius:5px;
+    margin-top:0.7rem;
+    font-size:1.2rem;
+}
+
+.cart_list{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1.8rem;
+    margin:2rem 10rem;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px 0  #d6d2d2;
+
+}
+.cart_list img{
+    width:200px;
+    background-color: #f1eeee;
+    margin-left:2rem;
+}
+
+
