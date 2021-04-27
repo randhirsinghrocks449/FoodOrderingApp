@@ -12,13 +12,13 @@ function App() {
   const [data,setData]= useState([]);
   const [cart,setCart]= useState([]);
   useEffect(() => {
-          async function fetchData(){
-         const response= await axios.get('/data')
-         console.log(response);
-         setData(response.data.results);
+    async function fetchData(){
+        const response= await axios.get('/data')
+        console.log(response);
+        setData(response.data.results);
         return response
        }
-     
+
  fetchData();
  fetchCartData();
 },[])
@@ -28,7 +28,6 @@ async function fetchCartData(){
   setCart(response.data);
  return response
 } 
-
 
 
 const incrementValue=(items)=>{
@@ -46,7 +45,6 @@ const removeCartItem=(index,items)=>{
   setCart(
     cart.filter((item,itemindex)=> index!==itemindex)
   )
-  // setValue(value-1);
   const data={
     _id:items._id
 }
@@ -65,8 +63,8 @@ const removeAll=()=>{
       <Switch>
         <Route exact path="/" component={()=><LandingPage fetchdata={data} />}></Route>
         <Route exact path="/cart" component={()=><Cart cartData={cart} removeItem={removeCartItem}  clearAll={removeAll}/>}></Route>
-        <Route exact path="/pizza" component={()=><Pizza  data={data}  fetchdata={data} increment={incrementValue}/>}></Route>
-        <Route exact path="/burger" component={()=><Burger data={data}  fetchdata={data} increment={incrementValue}/>}></Route>
+        <Route exact path="/pizza" component={()=><Pizza  fetchdata={data} increment={incrementValue}/>}></Route>
+        <Route exact path="/burger" component={()=><Burger fetchdata={data} increment={incrementValue}/>}></Route>
       </Switch>    
     </div>
     </>
